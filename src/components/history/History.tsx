@@ -3,7 +3,10 @@
 import Image from "next/image"
 import { motion } from "framer-motion"
 
+import { useLanguage } from "@/contexts/LanguageContext"
+
 export function History() {
+  const { t } = useLanguage()
   return (
     <section className="py-24 lg:py-32 bg-gray-100">
       <div className="container mx-auto px-4">
@@ -63,20 +66,20 @@ export function History() {
           >
             <div>
               <span className="text-brand-orange font-bold tracking-wider text-sm uppercase mb-2 block">
-                Our Story
+                {t.historyPage.subHeader}
               </span>
               <h1 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-6">
-                Company History
+                {t.historyPage.title}
               </h1>
             </div>
 
             <div className="space-y-5 text-gray-700 leading-relaxed">
               <p className="text-lg">
-                GreenPharm was founded as a private label nutrition company in 2016 to support our family business in the health and beauty industry. We have 25 years of experience in selling medical devices for home care. In 2014, we started to offer collagen supplements together with these devices and we had excellent feedback.
+                {t.historyPage.content[0]}
               </p>
 
               <p className="text-lg">
-                GreenPharm has begun to produce these products and thanks to the high quality of collagen, we have acquired new partners from across Europe. In the following years, we have added the manufacturing of capsules and tablets to our portfolio and, currently, we can offer a variety of dietary supplements.
+                {t.historyPage.content[1]}
               </p>
             </div>
 
@@ -84,15 +87,15 @@ export function History() {
             <div className="grid grid-cols-3 gap-6 pt-8 border-t border-gray-200 mt-8">
               <div>
                 <p className="text-3xl font-bold text-brand-green">25+</p>
-                <p className="text-sm text-gray-500 mt-1">Years Experience</p>
+                <p className="text-sm text-gray-500 mt-1">{t.historyPage.stats.experience}</p>
               </div>
               <div>
                 <p className="text-3xl font-bold text-brand-green">2016</p>
-                <p className="text-sm text-gray-500 mt-1">Founded</p>
+                <p className="text-sm text-gray-500 mt-1">{t.historyPage.stats.founded}</p>
               </div>
               <div>
                 <p className="text-3xl font-bold text-brand-green">EU</p>
-                <p className="text-sm text-gray-500 mt-1">Partners</p>
+                <p className="text-sm text-gray-500 mt-1">{t.historyPage.stats.partners}</p>
               </div>
             </div>
           </motion.div>

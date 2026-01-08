@@ -47,13 +47,13 @@ export function Contact() {
         {/* Header */}
         <div className="text-center mb-16">
           <span className="text-brand-orange font-bold tracking-wider text-sm uppercase mb-2 block">
-            Get In Touch
+            {t.contactPage.subHeader}
           </span>
           <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-4">
-            Let&apos;s Start Your Project
+            {t.contactPage.title}
           </h2>
           <p className="text-gray-600 max-w-2xl mx-auto">
-            Ready to create your own supplement line? Contact us today and let&apos;s discuss how we can bring your vision to life.
+            {t.contactPage.description}
           </p>
         </div>
 
@@ -72,16 +72,16 @@ export function Contact() {
                 <div className="w-12 h-12 bg-white/20 rounded-xl flex items-center justify-center">
                   <Calendar className="w-6 h-6" />
                 </div>
-                <h3 className="text-xl font-bold">Book a Call</h3>
+                <h3 className="text-xl font-bold">{t.contactPage.bookCall.title}</h3>
               </div>
               <p className="text-white/90 mb-6 text-sm leading-relaxed">
-                Schedule a free consultation with our team to discuss your supplement project requirements.
+                {t.contactPage.bookCall.description}
               </p>
               <Button
                 className="w-full bg-white text-brand-green hover:bg-white/90 font-semibold h-12"
               >
                 <Calendar className="w-5 h-5 mr-2" />
-                Schedule a Meeting
+                {t.contactPage.bookCall.button}
               </Button>
             </motion.div>
 
@@ -93,7 +93,7 @@ export function Contact() {
               transition={{ duration: 0.5, delay: 0.1 }}
               className="bg-white rounded-2xl p-8 shadow-sm border border-gray-100"
             >
-              <h3 className="text-lg font-bold text-gray-900 mb-6">Contact Information</h3>
+              <h3 className="text-lg font-bold text-gray-900 mb-6">{t.contactPage.contactInfo.title}</h3>
 
               <div className="space-y-5">
                 <a
@@ -104,7 +104,7 @@ export function Contact() {
                     <Phone className="w-5 h-5 text-brand-green" />
                   </div>
                   <div>
-                    <p className="text-sm text-gray-500 mb-1">Phone</p>
+                    <p className="text-sm text-gray-500 mb-1">{t.contactPage.contactInfo.phone}</p>
                     <p className="font-medium text-gray-900 group-hover:text-brand-green transition-colors">
                       +421 905 587 699
                     </p>
@@ -119,7 +119,7 @@ export function Contact() {
                     <Mail className="w-5 h-5 text-brand-green" />
                   </div>
                   <div>
-                    <p className="text-sm text-gray-500 mb-1">Email</p>
+                    <p className="text-sm text-gray-500 mb-1">{t.contactPage.contactInfo.email}</p>
                     <p className="font-medium text-gray-900 group-hover:text-brand-green transition-colors">
                       info@ecoideal.eu
                     </p>
@@ -131,12 +131,11 @@ export function Contact() {
                     <MapPin className="w-5 h-5 text-brand-green" />
                   </div>
                   <div>
-                    <p className="text-sm text-gray-500 mb-1">Address</p>
-                    <p className="font-medium text-gray-900 text-sm leading-relaxed">
-                      Panattoni Park Košice Letisko,<br />
-                      Hall No. 2, Ulica Andreja Kvasa No. 5,<br />
-                      040 17 Košice, Slovakia
-                    </p>
+                    <p className="text-sm text-gray-500 mb-1">{t.contactPage.contactInfo.address}</p>
+                    <p
+                      className="font-medium text-gray-900 text-sm leading-relaxed"
+                      dangerouslySetInnerHTML={{ __html: t.contactPage.contactInfo.addressText }}
+                    />
                   </div>
                 </div>
               </div>
@@ -152,9 +151,9 @@ export function Contact() {
             className="lg:col-span-3"
           >
             <div className="bg-white rounded-2xl p-8 lg:p-10 shadow-sm border border-gray-100">
-              <h3 className="text-xl font-bold text-gray-900 mb-2">Send us a Message</h3>
+              <h3 className="text-xl font-bold text-gray-900 mb-2">{t.contactPage.form.title}</h3>
               <p className="text-gray-500 text-sm mb-8">
-                Fill out the form below and we&apos;ll get back to you within 24 hours.
+                {t.contactPage.form.description}
               </p>
 
               {isSubmitted ? (
@@ -166,9 +165,9 @@ export function Contact() {
                   <div className="w-16 h-16 bg-brand-green/10 rounded-full flex items-center justify-center mb-4">
                     <CheckCircle className="w-8 h-8 text-brand-green" />
                   </div>
-                  <h4 className="text-xl font-bold text-gray-900 mb-2">Message Sent!</h4>
+                  <h4 className="text-xl font-bold text-gray-900 mb-2">{t.contactPage.form.success.title}</h4>
                   <p className="text-gray-500">
-                    Thank you for reaching out. We&apos;ll be in touch soon.
+                    {t.contactPage.form.success.description}
                   </p>
                 </motion.div>
               ) : (
@@ -176,7 +175,7 @@ export function Contact() {
                   <div className="grid sm:grid-cols-2 gap-5">
                     <div>
                       <label htmlFor="name" className="block text-sm font-medium text-gray-700 mb-2">
-                        Full Name *
+                        {t.contactPage.form.labels.name}
                       </label>
                       <Input
                         id="name"
@@ -185,13 +184,13 @@ export function Contact() {
                         required
                         value={formState.name}
                         onChange={handleChange}
-                        placeholder="John Doe"
+                        placeholder={t.contactPage.form.placeholders.name}
                         className="h-12 bg-gray-50 border-gray-200 focus:bg-white focus:border-brand-green focus:ring-brand-green/20"
                       />
                     </div>
                     <div>
                       <label htmlFor="email" className="block text-sm font-medium text-gray-700 mb-2">
-                        Email Address *
+                        {t.contactPage.form.labels.email}
                       </label>
                       <Input
                         id="email"
@@ -200,7 +199,7 @@ export function Contact() {
                         required
                         value={formState.email}
                         onChange={handleChange}
-                        placeholder="john@company.com"
+                        placeholder={t.contactPage.form.placeholders.email}
                         className="h-12 bg-gray-50 border-gray-200 focus:bg-white focus:border-brand-green focus:ring-brand-green/20"
                       />
                     </div>
@@ -209,7 +208,7 @@ export function Contact() {
                   <div className="grid sm:grid-cols-2 gap-5">
                     <div>
                       <label htmlFor="company" className="block text-sm font-medium text-gray-700 mb-2">
-                        Company Name
+                        {t.contactPage.form.labels.company}
                       </label>
                       <Input
                         id="company"
@@ -217,13 +216,13 @@ export function Contact() {
                         type="text"
                         value={formState.company}
                         onChange={handleChange}
-                        placeholder="Your Company"
+                        placeholder={t.contactPage.form.placeholders.company}
                         className="h-12 bg-gray-50 border-gray-200 focus:bg-white focus:border-brand-green focus:ring-brand-green/20"
                       />
                     </div>
                     <div>
                       <label htmlFor="phone" className="block text-sm font-medium text-gray-700 mb-2">
-                        Phone Number
+                        {t.contactPage.form.labels.phone}
                       </label>
                       <Input
                         id="phone"
@@ -231,7 +230,7 @@ export function Contact() {
                         type="tel"
                         value={formState.phone}
                         onChange={handleChange}
-                        placeholder="+1 234 567 890"
+                        placeholder={t.contactPage.form.placeholders.phone}
                         className="h-12 bg-gray-50 border-gray-200 focus:bg-white focus:border-brand-green focus:ring-brand-green/20"
                       />
                     </div>
@@ -239,7 +238,7 @@ export function Contact() {
 
                   <div>
                     <label htmlFor="message" className="block text-sm font-medium text-gray-700 mb-2">
-                      Your Message *
+                      {t.contactPage.form.labels.message}
                     </label>
                     <textarea
                       id="message"
@@ -248,7 +247,7 @@ export function Contact() {
                       rows={5}
                       value={formState.message}
                       onChange={handleChange}
-                      placeholder="Tell us about your project, product ideas, or any questions you have..."
+                      placeholder={t.contactPage.form.placeholders.message}
                       className="w-full px-4 py-3 bg-gray-50 border border-gray-200 rounded-lg focus:bg-white focus:border-brand-green focus:ring-2 focus:ring-brand-green/20 focus:outline-none transition-all resize-none"
                     />
                   </div>
@@ -264,12 +263,12 @@ export function Contact() {
                           <circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4" fill="none" />
                           <path className="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z" />
                         </svg>
-                        Sending...
+                        {t.contactPage.form.sending}
                       </span>
                     ) : (
                       <span className="flex items-center gap-2">
                         <Send className="w-5 h-5" />
-                        Send Message
+                        {t.contactPage.form.button}
                       </span>
                     )}
                   </Button>

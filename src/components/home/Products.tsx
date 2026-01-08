@@ -7,6 +7,16 @@ import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardFooter, CardHeader, CardTitle } from "@/components/ui/card"
 import { useLanguage } from "@/contexts/LanguageContext"
 
+import Image from "next/image"
+
+const productImages = [
+  "/jeliranibonboni.png",
+  "/drycapsuless.png",
+  "/gelcapsulesrek.png",
+  "/powder.png",
+  "/minitinktures.png",
+]
+
 export function Products() {
   const { t } = useLanguage()
 
@@ -27,8 +37,15 @@ export function Products() {
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           {t.products.categories.map((product, index) => (
-            <Card key={index} className="border-none shadow-sm hover:shadow-md transition-shadow h-full flex flex-col">
-              <div className="aspect-video bg-gray-200 rounded-t-xl w-full object-cover" /> {/* Placeholder for image */}
+            <Card key={index} className="border-none shadow-sm hover:shadow-md transition-shadow h-full flex flex-col overflow-hidden">
+              <div className="relative aspect-video w-full bg-gray-100">
+                <Image
+                  src={productImages[index]}
+                  alt={product.title}
+                  fill
+                  className="object-contain p-4"
+                />
+              </div>
               <CardHeader>
                 <CardTitle className="text-2xl">{product.title}</CardTitle>
               </CardHeader>

@@ -2,27 +2,12 @@
 
 import Image from "next/image"
 import { motion } from "framer-motion"
-
-const benefits = [
-  {
-    title: "Adapted to market trends",
-    description: "Private labeling allows businesses to stay current with market trends by quickly adapting to changing consumer preferences. This flexibility enables companies to introduce new products or variations that align with the latest demands, giving them a competitive edge.",
-  },
-  {
-    title: "Lower order quantity",
-    description: "Private label products often come with lower minimum order quantities (MOQs) compared to creating custom products from scratch. This is particularly advantageous for smaller businesses or startups with limited budgets, as it reduces the financial risk associated with holding large inventories.",
-  },
-  {
-    title: "Ideal for startup companies",
-    description: "Start-up companies can benefit from private labeling as it provides a cost-effective way to enter the market. By leveraging existing products and branding, start-ups can focus on building their brand presence and customer base without the complexities and high costs of product development.",
-  },
-  {
-    title: "Fast delivery",
-    description: "Private label products are usually readily available, leading to faster turnaround times. This is especially beneficial when responding to sudden increases in demand or when trying to quickly establish a product line. Fast delivery can contribute to improved customer satisfaction and loyalty.",
-  },
-]
+import { useLanguage } from "@/contexts/LanguageContext"
 
 export function KeyBenefits() {
+  const { t } = useLanguage()
+  const { benefits } = t.privateLabelPage
+
   return (
     <section className="py-12 sm:py-16 lg:py-24 bg-[#f5f4f0]">
       <div className="container mx-auto px-4">
@@ -35,12 +20,12 @@ export function KeyBenefits() {
             transition={{ duration: 0.5 }}
             className="text-2xl sm:text-3xl lg:text-4xl font-bold text-brand-green uppercase tracking-wide mb-10 sm:mb-14 lg:mb-16 text-center sm:text-left"
           >
-            Key Benefits
+            {benefits.title}
           </motion.h2>
 
           {/* Benefits Grid - 2 columns */}
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 sm:gap-x-12 lg:gap-x-16 gap-y-8 sm:gap-y-10 lg:gap-y-12 mb-12 sm:mb-16">
-            {benefits.map((benefit, index) => (
+            {benefits.items.map((benefit, index) => (
               <motion.div
                 key={benefit.title}
                 initial={{ opacity: 0, y: 20 }}
@@ -68,10 +53,10 @@ export function KeyBenefits() {
               className="order-2 md:order-1"
             >
               <h3 className="text-lg sm:text-xl lg:text-2xl font-bold text-brand-green uppercase tracking-wide mb-3 sm:mb-4">
-                Ready to order
+                {benefits.readyToOrder.title}
               </h3>
               <p className="text-gray-700 leading-relaxed text-sm sm:text-base">
-                Private label products are pre-manufactured and ready for sale, eliminating the need for businesses to invest time and resources in product development. This allows companies to streamline their operations, reduce time-to-market, and concentrate on marketing and sales efforts.
+                {benefits.readyToOrder.description}
               </p>
             </motion.div>
 

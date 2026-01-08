@@ -5,7 +5,7 @@ import { useLanguage } from "@/contexts/LanguageContext"
 
 const productTypes = [
   { key: 'powder', image: 'https://www.greenpharm.sk/wp-content/uploads/2025/04/product-type-powder.png' },
-  { key: 'tablets', image: 'https://www.greenpharm.sk/wp-content/uploads/2025/04/product-type-tables.png' },
+
   { key: 'capsules', image: 'https://www.greenpharm.sk/wp-content/uploads/2025/04/product-type-capsules.png' },
   { key: 'gummies', image: 'https://www.greenpharm.sk/wp-content/uploads/2025/04/product-type-gummies.png' },
   { key: 'softgels', image: 'https://www.greenpharm.sk/wp-content/uploads/2025/04/product-type-softgels.png' },
@@ -22,7 +22,7 @@ export function RangeOfProducts() {
           {t.contractMfg.rangeTitle}
         </h2>
 
-        <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-6 lg:gap-8 max-w-5xl mx-auto">
+        <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-6 lg:gap-8 max-w-5xl mx-auto justify-center">
           {productTypes.map((type) => (
             <div key={type.key} className="flex flex-col items-center group">
               <div className="relative w-full aspect-[242/141] mb-4 bg-gray-50 rounded-lg overflow-hidden transition-transform duration-300 group-hover:scale-105">
