@@ -70,7 +70,7 @@ export function Header() {
 
           <div className="flex items-center gap-2 text-sm text-gray-600">
             <Phone className="h-4 w-4" />
-            <span className="font-medium">+421 905 587 699</span>
+            <span className="font-medium">+359 88 8492226</span>
           </div>
 
           <Button className="bg-brand-orange hover:bg-brand-orange/90 text-white font-semibold px-6">
@@ -144,11 +144,11 @@ export function Header() {
                     className="flex flex-col gap-4"
                   >
                     <a
-                      href="tel:+421905587699"
+                      href="tel:+359888492226"
                       className="flex items-center justify-center gap-3 py-3 px-4 text-gray-600 hover:text-brand-green bg-white rounded-xl border border-gray-200 transition-colors"
                     >
                       <Phone className="h-5 w-5" />
-                      <span className="font-medium">+421 905 587 699</span>
+                      <span className="font-medium">+359 88 8492226</span>
                     </a>
                     <Button
                       className="bg-brand-orange hover:bg-brand-orange/90 text-white w-full h-14 text-lg font-semibold rounded-xl"

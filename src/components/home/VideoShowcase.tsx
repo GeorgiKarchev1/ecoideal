@@ -31,9 +31,9 @@ export function VideoShowcase() {
 
   return (
     <>
-      <section className="py-16 lg:py-24 bg-[#f9fafb]">
+      <section className="py-20 lg:py-32 bg-[#f9fafb]">
         <div className="container mx-auto px-4">
-          <div className="grid md:grid-cols-2 gap-8 lg:gap-12 max-w-5xl mx-auto">
+          <div className="grid md:grid-cols-2 gap-10 lg:gap-16 max-w-7xl mx-auto">
             {videos.map((video, index) => (
               <motion.div
                 key={video.id}
@@ -44,7 +44,7 @@ export function VideoShowcase() {
                 className="flex flex-col"
               >
                 {/* Title */}
-                <h3 className="text-sm lg:text-base font-bold text-brand-green tracking-wider uppercase mb-4 text-center">
+                <h3 className="text-base lg:text-xl font-bold text-brand-green tracking-wider uppercase mb-6 text-center">
                   {video.title}
                 </h3>
 
@@ -62,8 +62,8 @@ export function VideoShowcase() {
 
                   {/* Play Button Overlay */}
                   <div className="absolute inset-0 bg-black/20 group-hover:bg-black/30 transition-colors duration-300 flex items-center justify-center">
-                    <div className="w-14 h-14 lg:w-16 lg:h-16 bg-white/90 rounded-full flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform duration-300">
-                      <Play className="w-6 h-6 lg:w-7 lg:h-7 text-brand-green fill-brand-green ml-1" />
+                    <div className="w-20 h-20 lg:w-24 lg:h-24 bg-white/90 rounded-full flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform duration-300">
+                      <Play className="w-10 h-10 lg:w-12 lg:h-12 text-brand-green fill-brand-green ml-1" />
                     </div>
                   </div>
                 </button>

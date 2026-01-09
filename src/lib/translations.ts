@@ -74,6 +74,11 @@ export const translations = {
       moqSachets: "Sachets: Min 1000m foil (approx 20,000 sachets at 5g)",
       moqCapsules: "Capsules: Min 500 jars (approx 30,000 capsules total)",
     },
+    productsGrid: {
+      title: "Products",
+      description: "Our goal is to produce high-quality supplements that will promote the health of your customers. That's why we choose only ingredients that meet ISO-GMP standards, are EU-approved and come from the most reputable suppliers.",
+      button: "View products"
+    },
     contractMfg: {
       rangeTitle: "RANGE OF PRODUCTS",
       packagingTitle: "TYPES OF PACKAGING",
@@ -348,6 +353,11 @@ export const translations = {
       moqTitle: "Минимални количества (MOQ)",
       moqSachets: "Сашета: Минимум 1000 метра фолио (прибл. 20 000 сашета по 5g)",
       moqCapsules: "Капсули: Минимум 500 буркана (общо около 30 000 капсули)",
+    },
+    productsGrid: {
+      title: "Продукти",
+      description: "Нашата цел е да произвеждаме висококачествени добавки, които ще подобрят здравето на вашите клиенти. Затова избираме само съставки, които отговарят на стандартите ISO-GMP, одобрени са от ЕС и идват от най-реномираните доставчици.",
+      button: "Виж продуктите"
     },
     contractMfg: {
       rangeTitle: "ГАМА ОТ ПРОДУКТИ",
