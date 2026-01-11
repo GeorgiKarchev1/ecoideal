@@ -1,4 +1,4 @@
-import { Features } from "@/components/home/Features";
+
 import { Hero } from "@/components/home/Hero";
 import { LogoMarquee } from "@/components/home/LogoMarquee";
 import { Process } from "@/components/home/Process";
@@ -12,7 +12,6 @@ export default function Home() {
       <Hero />
       <VideoShowcase />
       <LogoMarquee />
-      <Features />
       <ProductsGrid />
       <Products />
       <Process />

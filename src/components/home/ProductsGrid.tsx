@@ -10,9 +10,9 @@ export function ProductsGrid() {
     const { t } = useLanguage()
 
     return (
-        <div className="w-full flex flex-col gap-5 py-5">
+        <div className="w-full flex flex-col gap-5 py-5 bg-cover bg-center bg-no-repeat" style={{ backgroundImage: "url('/gp-services-bg.jpg')" }}>
             {/* SECTION 1: PRODUCTS (Images Left, Content Right-Center) */}
-            <section className="relative w-full bg-white">
+            <section className="relative w-full">
                 <div className="flex flex-col lg:flex-row w-full">
                     {/* Left Side - Images - Full width on mobile, 50% on desktop */}
                     <div className="w-full lg:w-1/2 flex flex-col">
@@ -82,7 +82,7 @@ export function ProductsGrid() {
             </section>
 
             {/* SECTION 2: PRIVATE LABEL (Images Right, Content Left-Center) - Reflected Layout */}
-            <section className="relative w-full bg-white">
+            <section className="relative w-full">
                 <div className="flex flex-col lg:flex-row w-full lg:justify-end">
                     {/* Right Side - Images - Images on the right due to lg:justify-end */}
                     <div className="w-full lg:w-1/2 flex flex-col">
@@ -152,7 +152,7 @@ export function ProductsGrid() {
             </section>
 
             {/* SECTION 3: CONTRACT MANUFACTURING (Images Left, Content Right-Center) - Same as Section 1 */}
-            <section className="relative w-full bg-white">
+            <section className="relative w-full">
                 <div className="flex flex-col lg:flex-row w-full">
                     {/* Left Side - Images - Full width on mobile, 50% on desktop */}
                     <div className="w-full lg:w-1/2 flex flex-col">

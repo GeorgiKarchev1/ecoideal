@@ -31,7 +31,7 @@ export function VideoShowcase() {
 
   return (
     <>
-      <section className="py-20 lg:py-32 bg-[#f9fafb]">
+      <section className="py-20 lg:py-32 bg-cover bg-center bg-no-repeat" style={{ backgroundImage: "url('/gp-services-bg.jpg')" }}>
         <div className="container mx-auto px-4">
           <div className="grid md:grid-cols-2 gap-10 lg:gap-16 max-w-7xl mx-auto">
             {videos.map((video, index) => (
