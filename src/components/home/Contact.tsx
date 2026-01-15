@@ -112,7 +112,7 @@ export function Contact() {
                 </a>
 
                 <a
-                  href="https://wa.me/359897891438"
+                  href="https://wa.me/359888492226"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex items-start gap-4 group"
@@ -123,7 +123,7 @@ export function Contact() {
                   <div>
                     <p className="text-sm text-gray-500 mb-1">WhatsApp</p>
                     <p className="font-medium text-gray-900 group-hover:text-brand-green transition-colors">
-                      +359 89 7891438
+                      +359 88 8492226
                     </p>
                   </div>
                 </a>

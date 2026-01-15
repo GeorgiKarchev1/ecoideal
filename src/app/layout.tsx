@@ -23,6 +23,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
+        suppressHydrationWarning={true}
         className={`${raleway.variable} antialiased min-h-screen flex flex-col font-sans`}
       >
         <LanguageProvider>

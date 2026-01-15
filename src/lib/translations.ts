@@ -135,16 +135,49 @@ export const translations = {
       }
     },
     process: {
-      title: "Full Service Process",
-      subtitle: "Every client receives a fully finished, market-ready product",
+      title: "Your way to a nutritional supplement",
+      subtitle: "Our fast and simple process from ordering to production is well-worked out",
       steps: [
-        { title: "Needs Analysis", description: "Understanding your specific requirements." },
-        { title: "Formula Development", description: "Creating a custom formula or using your recipe." },
-        { title: "Production", description: "Encapsulation, filling, or mixing." },
-        { title: "Packaging", description: "Jars, bottles, or sachets." },
-        { title: "Design & Labeling", description: "Label design and printing." },
-        { title: "Final Delivery", description: "Shipping the ready product to you." },
+        { title: "Choose the products", description: "" },
+        { title: "Ask for sample", description: "" },
+        { title: "Prepare your brand", description: "" },
+        { title: "Place an order", description: "" },
+        { title: "Receive your product", description: "" },
       ],
+      button: "More on order"
+    },
+    trendingNow: {
+      accent: "Trending now: ",
+      title: "what smart brands are launching",
+      description: "We’ve combined market research with our data to help you identify private label supplements that are high in demand. If you’re looking to expand your line with proven products, start here.",
+      items: [
+        {
+          title: "Electrolytes",
+          description: "Electrolytes are moving into the mainstream, with the global market projected to hit $684.5 million by 2030. In the UK, usage peaks at 32% among 25–34-year-olds – just one sign of the category’s growing appeal among younger, active consumers.",
+          button: "Show products",
+          link: "/en/prod/electrolytes/"
+        },
+        {
+          title: "Creatine",
+          description: "The global creatine monohydrate market is set to grow from $530 million in 2023 to $890 million by 2032. Powdered creatine is topping online searches and retail sales throughout 2025.",
+          button: "Show products",
+          link: "/en/p_cat/creatine/"
+        },
+        {
+          title: "Collagen",
+          description: "Collagen has moved beyond niche status, with nearly half of US consumers familiar with the ingredient. A projected CAGR of 6.4% means the market could top $3 billion by 2034 – and your brand can share in that growth.",
+          button: "Show products",
+          link: "/en/p_cat/collagen/"
+        }
+      ]
+    },
+    certificates: {
+      title: "Our certificates"
+    },
+    bookCallSection: {
+      title: "Book a discovery call with our supplement expert",
+      bookCallBtn: "Book a call",
+      whatsappBtn: "WhatsApp +359 88 8492226"
     },
     team: {
       title: "Our Team",
@@ -414,16 +447,49 @@ export const translations = {
       }
     },
     process: {
-      title: "Пълно обслужване",
-      subtitle: "Всеки клиент получава напълно завършен, готов за пазар продукт",
+      title: "Вашият път към хранителна добавка",
+      subtitle: "Нашият бърз и прост процес от поръчка до производство е добре изработен",
       steps: [
-        { title: "Анализ на нуждите", description: "Разбиране на вашите конкретни изисквания." },
-        { title: "Разработка на формула", description: "Или работа по ваша рецепта." },
-        { title: "Производство", description: "Капсулиране, пълнене или смесване." },
-        { title: "Опаковка", description: "Буркани, бутилки или сашета." },
-        { title: "Дизайн и етикети", description: "Дизайн и печат на етикети." },
-        { title: "Крайна доставка", description: "Доставка на готовия продукт." },
+        { title: "Изберете продукти", description: "" },
+        { title: "Поискайте мостра", description: "" },
+        { title: "Подгответе вашия бранд", description: "" },
+        { title: "Направете поръчка", description: "" },
+        { title: "Получете продукта си", description: "" },
       ],
+      button: "Повече за поръчките"
+    },
+    trendingNow: {
+      accent: "Тенденции сега: ",
+      title: "какво стартират умните марки",
+      description: "Комбинирахме пазарни проучвания с нашите данни, за да ви помогнем да идентифицирате добавки със собствена марка, които са много търсени. Ако искате да разширите линията си с доказани продукти, започнете оттук.",
+      items: [
+        {
+          title: "Електролити",
+          description: "Електролитите навлизат в масовия пазар, като се прогнозира глобалният пазар да достигне 684,5 милиона долара до 2030 г. В Обединеното кралство употребата достига връх от 32% сред 25-34-годишните - само един знак за нарастващата привлекателност на категорията сред по-младите, активни потребители.",
+          button: "Вижте продуктите",
+          link: "/en/prod/electrolytes/"
+        },
+        {
+          title: "Креатин",
+          description: "Глобалният пазар на креатин монохидрат се очаква да нарасне от 530 милиона долара през 2023 г. до 890 милиона долара до 2032 г. Креатинът на прах оглавява онлайн търсенията и продажбите на дребно през 2025 г.",
+          button: "Вижте продуктите",
+          link: "/en/p_cat/creatine/"
+        },
+        {
+          title: "Колаген",
+          description: "Колагенът вече не е нишова категория, като почти половината от потребителите в САЩ са запознати със съставката. Прогнозираният CAGR от 6,4% означава, че пазарът може да надхвърли 3 милиарда долара до 2034 г. - и вашата марка може да сподели този растеж.",
+          button: "Вижте продуктите",
+          link: "/en/p_cat/collagen/"
+        }
+      ]
+    },
+    certificates: {
+      title: "Нашите сертификати"
+    },
+    bookCallSection: {
+      title: "Запазете опознавателен разговор с нашия експерт по добавки",
+      bookCallBtn: "Запази час",
+      whatsappBtn: "WhatsApp +359 88 8492226"
     },
     team: {
       title: "Екип",
