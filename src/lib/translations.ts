@@ -80,6 +80,36 @@ export const translations = {
       button: "View products"
     },
     contractMfg: {
+      page: {
+        hero: {
+          title: "Transform Your Product Ideas Into Reality With Supplement Contract Manufacturing"
+        },
+        benefits: {
+          title: "Key benefits",
+          items: [
+            {
+              title: "Full service",
+              description: "Contract manufacturing provides a comprehensive solution, covering the entire production process from raw material sourcing to product assembly and packaging. This allows your businesses to focus on other aspects of their operations, such as marketing and sales, without the need to manage the intricacies of manufacturing"
+            },
+            {
+              title: "Lower costs",
+              description: "Outsourcing manufacturing to a contract manufacturer can lead to cost savings. Contract manufacturers often benefit from economies of scale, bulk purchasing power, and specialized production processes, resulting in reduced production costs. This can be particularly advantageous for businesses seeking to optimize their cost structure."
+            },
+            {
+              title: "Professional image",
+              description: "Partnering with a reputable contract manufacturer will enhance your professional image. By associating with a production facility that adheres to quality standards and industry regulations, businesses can build trust with customers, suppliers, and other stakeholders, contributing to a positive brand perception."
+            },
+            {
+              title: "Expert advice",
+              description: "We have a wealth of industry knowledge and expertise. By partnering with us, your business will benefit from professional advice on production processes, regulatory compliance, and quality control. This guidance can be invaluable, especially for companies entering new markets or launching new products."
+            },
+            {
+              title: "Tailor made supplements",
+              description: "Contract manufacturing offers the flexibility to create custom formulations tailored to specific requirements. This allows companies to differentiate their products in the market and meet the unique needs of their target audience. The ability to create tailor-made supplements can be a significant competitive advantage."
+            }
+          ]
+        }
+      },
       rangeTitle: "RANGE OF PRODUCTS",
       packagingTitle: "TYPES OF PACKAGING",
       products: {
@@ -253,6 +283,7 @@ export const translations = {
     historyPage: {
       subHeader: "Our Story",
       title: "Company History",
+      timelineTitle: "Our Journey",
       content: [
         "GreenPharm was founded as a private label nutrition company in 2016 to support our family business in the health and beauty industry. We have 25 years of experience in selling medical devices for home care. In 2014, we started to offer collagen supplements together with these devices and we had excellent feedback.",
         "GreenPharm has begun to produce these products and thanks to the high quality of collagen, we have acquired new partners from across Europe. In the following years, we have added the manufacturing of capsules and tablets to our portfolio and, currently, we can offer a variety of dietary supplements."
@@ -261,7 +292,37 @@ export const translations = {
         experience: "Years Experience",
         founded: "Founded",
         partners: "Partners"
-      }
+      },
+      timeline: [
+        {
+          year: "2019",
+          text: "Ecoideal is founded in Plovdiv. The start focuses on in-house production via seed and herb oil pressing machines. The main goal is control over raw materials and pure origin of products."
+        },
+        {
+          year: "2020",
+          text: "ISO and GMP standards are introduced for workflow and production traceability. A softgel capsule machine is purchased, allowing encapsulation of our cold-pressed oils for better stability and customer convenience."
+        },
+        {
+          year: "2021",
+          text: "Expansion of the technological line with hard capsule machines. This enables combining herbs with vitamins, minerals, and other functional ingredients, creating a wider range of supplements."
+        },
+        {
+          year: "2022",
+          text: "The company starts working with international partners. The production, quality control, and logistics teams are expanded. Powder product machines are purchased, opening new product categories."
+        },
+        {
+          year: "2023",
+          text: "Herbal tinctures are developed and introduced as a new product line based on own herbal extracts. The firm confidently enters the functional liquid supplements segment."
+        },
+        {
+          year: "2024",
+          text: "Ecoideal is now present in European markets, working with global brands and sector leaders. The company wins a clean product award for milk thistle at the International Expo Center Sofia — recognition for quality and production transparency."
+        },
+        {
+          year: "2025",
+          text: "The company develops and creates a new direction – gummies, specializing in a one-of-a-kind technology in Europe for infusing high-quality active ingredients directly into the jelly matrix. This allows production of functional products with high bioavailability and controlled formulas, for both own developments and partner brands."
+        }
+      ]
     },
     privateLabelPage: {
       hero: {
@@ -393,6 +454,36 @@ export const translations = {
       button: "Виж продуктите"
     },
     contractMfg: {
+      page: {
+        hero: {
+          title: "Превърнете идеите си за продукти в реалност с производство на добавки на ишлеме"
+        },
+        benefits: {
+          title: "Основни предимства",
+          items: [
+            {
+              title: "Пълно обслужване",
+              description: "Ишлемето (Contract manufacturing) предоставя цялостно решение, обхващащо целия производствен процес от доставката на суровини до сглобяването и опаковането на продукта. Това позволява на вашия бизнес да се съсредоточи върху други аспекти на дейността си, като маркетинг и продажби, без да е необходимо да управлява сложността на производството."
+            },
+            {
+              title: "По-ниски разходи",
+              description: "Аутсорсингът на производството към производител на ишлеме може да доведе до спестяване на разходи. Производителите на ишлеме често се възползват от икономии от мащаба, покупателна способност на едро и специализирани производствени процеси, което води до намалени производствени разходи. Това може да бъде особено изгодно за бизнеси, които искат да оптимизират разходната си структура."
+            },
+            {
+              title: "Професионален имидж",
+              description: "Партньорството с реномиран производител на ишлеме ще подобри вашия професионален имидж. Чрез свързване с производствено съоръжение, което спазва стандартите за качество и индустриалните регулации, бизнесите могат да изградят доверие у клиенти, доставчици и други заинтересовани страни, допринасяйки за положително възприемане на марката."
+            },
+            {
+              title: "Експертен съвет",
+              description: "Ние разполагаме с богат опит и експертиза в индустрията. Партнирайки си с нас, вашият бизнес ще се възползва от професионални съвети относно производствените процеси, съответствието с регулациите и контрола на качеството. Тези насоки могат да бъдат безценни, особено за компании, навлизащи на нови пазари или стартиращи нови продукти."
+            },
+            {
+              title: "Персонализирани добавки",
+              description: "Производството на ишлеме предлага гъвкавост за създаване на потребителски формули, съобразени със специфични изисквания. Това позволява на компаниите да диференцират продуктите си на пазара и да отговорят на уникалните нужди на своята целева аудитория. Възможността за създаване на персонализирани добавки може да бъде значително конкурентно предимство."
+            }
+          ]
+        }
+      },
       rangeTitle: "ГАМА ОТ ПРОДУКТИ",
       packagingTitle: "ВИДОВЕ ОПАКОВКИ",
       products: {
@@ -565,6 +656,7 @@ export const translations = {
     historyPage: {
       subHeader: "Нашата история",
       title: "История на компанията",
+      timelineTitle: "Нашият път",
       content: [
         "GreenPharm беше основана като компания за частни марки през 2016 г., за да подкрепи нашия семеен бизнес в индустрията за здраве и красота. Имаме 25 години опит в продажбата на медицински изделия за домашна грижа. През 2014 г. започнахме да предлагаме колагенови добавки заедно с тези устройства и получихме отлични отзиви.",
         "GreenPharm започна да произвежда тези продукти и благодарение на високото качество на колагена, придобихме нови партньори от цяла Европа. През следващите години добавихме производството на капсули и таблетки към нашето портфолио и в момента можем да предложим разнообразие от хранителни добавки."
@@ -573,7 +665,37 @@ export const translations = {
         experience: "Години опит",
         founded: "Основана",
         partners: "Партньори"
-      }
+      },
+      timeline: [
+        {
+          year: "2019",
+          text: "Компания Екоидеал е основана в Пловдив. Стартът е с фокус върху собствено производство чрез машини за пресоване на масла от семена и билки. Основната цел е контрол върху суровината и чистия произход на продуктите."
+        },
+        {
+          year: "2020",
+          text: "Въвеждат се ISO и GMP стандарти за работа и проследимост на производството. Закупена е машина за гел капсули, която позволява вложване на нашите студено пресовани масла под капсулна форма с по-добра стабилност и удобство за крайния клиент."
+        },
+        {
+          year: "2021",
+          text: "Разширяване на технологичната линия с машини за твърди капсули. Това дава възможност за комбиниране на билки с витамини, минерали и други функционални съставки, както и за създаване на по-широка гама хранителни добавки."
+        },
+        {
+          year: "2022",
+          text: "Компанията започва работа с международни партньори. Разширява се екипът в производството, контрол на качеството и логистиката. Закупени са машини за прахообразни продукти, които отварят нови продуктови категории."
+        },
+        {
+          year: "2023",
+          text: "Разработват се и се внедряват билкови тинктури като нова продуктова линия, базирана на собствените билкови екстракти. Фирмата стъпва по-уверено в сегмента на функционалните течни добавки."
+        },
+        {
+          year: "2024",
+          text: "Екоидеал вече присъства на европейските пазари и работи със световни марки и лидери в сектора. Компанията печели награда за чист продукт от бял трън на международното изложение в Експо Център София — признание за качеството и прозрачността на производството."
+        },
+        {
+          year: "2025",
+          text: "Компанията разработва и създава ново направление – желирани бонбони (gummies), като се специализира в единствената по рода си в Европа технология за вложване на висококачествени активни съставки директно в желираната матрица. Това позволява производство на функционални продукти с висока бионаличност и контролирани формули, насочени както към собствени разработки, така и към партньорски брандове."
+        }
+      ]
     },
     privateLabelPage: {
       hero: {
